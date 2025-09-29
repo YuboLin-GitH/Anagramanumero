@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         mibinding.button.setOnClickListener {
             if (anagrama(mibinding.cadEditText1.text.toString(), mibinding.cadEditText2.text.toString())){
-
+                mibinding.resultadoTextView.text = "✅ Son anagramas"
+            }else{
+                mibinding.resultadoTextView.text = "❌ No son anagramas"
             }
         }
 
@@ -43,13 +45,6 @@ class MainActivity : AppCompatActivity() {
     private fun anagrama(cad1:String, cad2:String): Boolean{
 
 
-
-        //cad1 es la cadean que recorro
-        //declaro una cadena resultado que inicialmente es cad2
-
-
-       var cad1: String = mibinding.cadEditText1.toString()
-       var cad2: String = mibinding.cadEditText2.toString()
        // var cadena2: String = mibinding.cadEditText2.toString()
         var i = 0
 
@@ -71,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
             i++
         }
-            return es_anagrama
+            return es_anagrama && cadema_resultado.isEmpty()
     }
 
 
