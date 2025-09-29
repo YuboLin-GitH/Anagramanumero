@@ -38,7 +38,8 @@
         android:text="Cadena1"
         app:layout_constraintBottom_toTopOf="@+id/cadEditText1"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="163dp" />
+        tools:layout_editor_absoluteX="163dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -47,7 +48,8 @@
         android:text="Cadena2"
         app:layout_constraintBottom_toTopOf="@+id/cadEditText2"
         app:layout_constraintTop_toBottomOf="@+id/cadEditText1"
-        tools:layout_editor_absoluteX="163dp" />
+        tools:layout_editor_absoluteX="163dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
